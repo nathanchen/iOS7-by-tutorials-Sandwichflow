@@ -19,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *instructionTextView;
 
 @property (nonatomic, weak) Sandwich *sandwich;
-@property (nonatomic, weak) NSMutableArray *keywords;
+@property (nonatomic, strong) NSMutableArray *keywords;
 
 - (IBAction)closeButtonTapper:(id)sender;
 

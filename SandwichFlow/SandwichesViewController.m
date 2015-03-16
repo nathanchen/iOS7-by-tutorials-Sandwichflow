@@ -57,8 +57,8 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     cell.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.5];
-    id sandwich = [[self sandwiches] objectAtIndex:indexPath.row];
-    cell.textLabel.text = [sandwich valueForKey:@"title"];
+    Sandwich *sandwich = [[self sandwiches] objectAtIndex:indexPath.row];
+    cell.textLabel.text = sandwich.title;
     return cell;
 }
 

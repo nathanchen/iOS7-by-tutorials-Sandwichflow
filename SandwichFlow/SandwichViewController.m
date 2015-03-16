@@ -23,6 +23,8 @@
     [self.view addSubview:background];
     [self.view sendSubviewToBack:background];
     
+    _keywords = _sandwich.keywords;
+    
     [_keywordCollectionView registerClass:[CollectionViewLabelCell class] forCellWithReuseIdentifier:@"cell"];
     _keywordCollectionView.dataSource = self;
     _keywordCollectionView.backgroundColor = [UIColor clearColor];
@@ -36,12 +38,12 @@
 
 - (void)updateControlsWithYummySandwichData
 {
-    NSString *imageName = [_sandwich valueForKey:@"image"];
+    NSString *imageName = _sandwich.imageNamed;
     UIImage *image = [UIImage imageNamed:imageName];
     _imageView.image = image;
     
-    _navigationBar.topItem.title = [_sandwich valueForKey:@"title"];
-    NSArray *instructions = [_sandwich valueForKey:@"instructions"];
+    _navigationBar.topItem.title = _sandwich.title;
+    NSArray *instructions = _sandwich.instructions;
     _instructionTextView.text = [instructions componentsJoinedByString:@"\n\n"];
 }
 

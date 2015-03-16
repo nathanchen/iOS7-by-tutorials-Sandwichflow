@@ -20,8 +20,20 @@
     NSString *data = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     NSData *results = [data dataUsingEncoding:NSUTF8StringEncoding];
     NSMutableArray *json = [NSJSONSerialization JSONObjectWithData:results options:NSJSONReadingMutableContainers error:nil];
+    
+    NSMutableArray *sandwiches = [[NSMutableArray alloc] init];
+    Sandwich *sandwich;
+    for (id temp in json)
+    {
+        sandwich = [[Sandwich alloc] init];
+        sandwich.title = [temp valueForKey:@"title"];
+        sandwich.imageNamed = [temp valueForKey:@"image"];
+        sandwich.instructions = [temp valueForKey:@"instructions"];
+        sandwich.keywords = [temp valueForKey:@"keywords"];
+        [sandwiches addObject:sandwich];
+    }
 
-    return json;
+    return sandwiches;
 }
 
 
