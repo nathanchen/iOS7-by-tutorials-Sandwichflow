@@ -7,12 +7,22 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Sandwich.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+
+- (NSMutableArray *)sandwiches
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Sandwiches" ofType:@"json"];
+    NSString *data = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSData *results = [data dataUsingEncoding:NSUTF8StringEncoding];
+    NSMutableArray *json = [NSJSONSerialization JSONObjectWithData:results options:NSJSONReadingMutableContainers error:nil];
+
+    return json;
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
