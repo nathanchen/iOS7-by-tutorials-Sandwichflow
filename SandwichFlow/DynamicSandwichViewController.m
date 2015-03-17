@@ -23,6 +23,8 @@
     
     BOOL viewDocked;
     UISnapBehavior *snap;
+    
+    BOOL viewBounced;
 }
 
 @end
@@ -39,6 +41,7 @@
     gravity = [[UIGravityBehavior alloc] init];
     animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     viewDocked = NO;
+    viewBounced = NO;
     
 //    UIImageView *backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Background-LowerLayer"]];
 //    [self.view addSubview:backgroundImageView];
@@ -176,6 +179,24 @@
     }
 }
 
+- (void)bounce: (UIView *)view
+{
+    if (viewBounced)
+    {
+        for (UIView *aView in views)
+        {
+            if (aView != view)
+            {
+                CGPoint vel = CGPointMake(0, arc4random_uniform(2000));
+                UIDynamicItemBehavior *behavior = [self itemBehaviorForView:aView];
+                [behavior addLinearVelocity:vel forItem:aView];
+                [animator updateItemUsingCurrentState:aView];
+            }
+        }
+        viewBounced = NO;
+    }
+}
+
 - (void)setAlphaWhenViewDocked: (UIView *)view andAlpha: (float)alpha
 {
     for (UIView *aView in views)
@@ -219,6 +240,7 @@
         [self addVelocityToView:draggedView andGesture:gesture];
         [animator updateItemUsingCurrentState:draggedView];
         draggingView = NO;
+        viewBounced = YES;
         [self tryDockView:draggedView];
     }
 }
@@ -226,7 +248,11 @@
 - (void)collisionBehavior:(UICollisionBehavior *)behavior beganContactForItem:(id<UIDynamicItem>)item withBoundaryIdentifier:(id<NSCopying>)identifier atPoint:(CGPoint)p
 {
     NSString *stringIdentifier = (NSString *)identifier;
-    if ([@"2" isEqualToString:stringIdentifier])
+    if ([@"1" isEqualToString:stringIdentifier])
+    {
+        [self bounce:(UIView *)item];
+    }
+    else if ([@"2" isEqualToString:stringIdentifier])
     {
         [self tryDockView:(UIView *)item];
     }
