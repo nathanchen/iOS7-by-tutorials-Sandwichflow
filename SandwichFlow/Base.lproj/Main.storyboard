@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="pZ0-Bq-qbV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fiK-Uo-2IO">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -9,7 +9,7 @@
         <!--Sandwich View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SandwichViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SandwichVC" id="BYZ-38-t0r" customClass="SandwichViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cp9-ly-vfw"/>
                         <viewControllerLayoutGuide type="bottom" id="TCw-Ja-NX9"/>
@@ -58,13 +58,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzp-nc-x2z">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="DTo-PF-or8">
-                                        <barButtonItem key="leftBarButtonItem" title="Close" id="7lD-oN-noh">
-                                            <connections>
-                                                <action selector="closeButtonTapper:" destination="BYZ-38-t0r" id="Ipr-Ly-lSb"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Title" id="DTo-PF-or8"/>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -88,7 +82,6 @@
                     <navigationItem key="navigationItem" id="XbI-KQ-5Tf"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="closeButton" destination="7lD-oN-noh" id="MVo-6d-tgu"/>
                         <outlet property="imageView" destination="ReN-Fc-ves" id="cMh-D9-DXV"/>
                         <outlet property="instructionTextView" destination="GgK-AM-hTT" id="TGR-as-hYf"/>
                         <outlet property="keywordCollectionView" destination="5p4-pn-m9K" id="Jsk-jD-QPP"/>
@@ -116,44 +109,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3eZ-gv-0s4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-454" y="419"/>
-        </scene>
-        <!--Sandwiches View Controller-->
-        <scene sceneID="tWx-p1-5cY">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1xf-Zs-0Jt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="pZ0-Bq-qbV" customClass="SandwichesViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="T5T-Tp-bvN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="kRO-8g-N9s">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kRO-8g-N9s" id="3pg-Mc-NVj">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1J-DS-a3T">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="BZ0-3G-a2c"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="pZ0-Bq-qbV" id="Pmn-SH-OgV"/>
-                            <outlet property="delegate" destination="pZ0-Bq-qbV" id="Sqr-qA-qyg"/>
-                        </connections>
-                    </tableView>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                </tableViewController>
-            </objects>
-            <point key="canvasLocation" x="-75" y="419"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

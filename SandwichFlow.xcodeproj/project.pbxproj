@@ -15,6 +15,24 @@
 		C501DD761AB466D2007C6ACF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C501DD751AB466D2007C6ACF /* Images.xcassets */; };
 		C501DD791AB466D2007C6ACF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C501DD771AB466D2007C6ACF /* LaunchScreen.xib */; };
 		C501DD851AB466D3007C6ACF /* SandwichFlowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C501DD841AB466D3007C6ACF /* SandwichFlowTests.m */; };
+		C501DD9C1AB46A09007C6ACF /* Attribution.txt in Resources */ = {isa = PBXBuildFile; fileRef = C501DD8F1AB46A09007C6ACF /* Attribution.txt */; };
+		C501DD9D1AB46A09007C6ACF /* Background-LowerLayer.png in Resources */ = {isa = PBXBuildFile; fileRef = C501DD901AB46A09007C6ACF /* Background-LowerLayer.png */; };
+		C501DD9E1AB46A09007C6ACF /* Background-LowerLayer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C501DD911AB46A09007C6ACF /* Background-LowerLayer@2x.png */; };
+		C501DD9F1AB46A09007C6ACF /* Background-MidLayer.png in Resources */ = {isa = PBXBuildFile; fileRef = C501DD921AB46A09007C6ACF /* Background-MidLayer.png */; };
+		C501DDA01AB46A09007C6ACF /* Background-MidLayer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C501DD931AB46A09007C6ACF /* Background-MidLayer@2x.png */; };
+		C501DDA11AB46A09007C6ACF /* CheeseAndOnion.png in Resources */ = {isa = PBXBuildFile; fileRef = C501DD941AB46A09007C6ACF /* CheeseAndOnion.png */; };
+		C501DDA21AB46A09007C6ACF /* EggAndCress.png in Resources */ = {isa = PBXBuildFile; fileRef = C501DD951AB46A09007C6ACF /* EggAndCress.png */; };
+		C501DDA31AB46A09007C6ACF /* EggSalad.png in Resources */ = {isa = PBXBuildFile; fileRef = C501DD961AB46A09007C6ACF /* EggSalad.png */; };
+		C501DDA41AB46A09007C6ACF /* Salmon.png in Resources */ = {isa = PBXBuildFile; fileRef = C501DD971AB46A09007C6ACF /* Salmon.png */; };
+		C501DDA51AB46A09007C6ACF /* Sandwiches.json in Resources */ = {isa = PBXBuildFile; fileRef = C501DD981AB46A09007C6ACF /* Sandwiches.json */; };
+		C501DDA61AB46A09007C6ACF /* Sarnie.png in Resources */ = {isa = PBXBuildFile; fileRef = C501DD991AB46A09007C6ACF /* Sarnie.png */; };
+		C501DDA71AB46A09007C6ACF /* Sarnie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C501DD9A1AB46A09007C6ACF /* Sarnie@2x.png */; };
+		C501DDA81AB46A09007C6ACF /* Trout.png in Resources */ = {isa = PBXBuildFile; fileRef = C501DD9B1AB46A09007C6ACF /* Trout.png */; };
+		C501DDAB1AB46A36007C6ACF /* CollectionViewLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C501DDAA1AB46A36007C6ACF /* CollectionViewLabelCell.m */; };
+		C501DDAE1AB46D5E007C6ACF /* SandwichViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C501DDAD1AB46D5E007C6ACF /* SandwichViewController.m */; };
+		C501DDB11AB49B3A007C6ACF /* SandwichesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C501DDB01AB49B3A007C6ACF /* SandwichesViewController.m */; };
+		C51965DB1AB6AB6900A0403F /* Sandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = C51965DA1AB6AB6900A0403F /* Sandwich.m */; };
+		C51965DE1AB6CD8400A0403F /* DynamicSandwichViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C51965DD1AB6CD8400A0403F /* DynamicSandwichViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +60,29 @@
 		C501DD7E1AB466D3007C6ACF /* SandwichFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandwichFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C501DD831AB466D3007C6ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C501DD841AB466D3007C6ACF /* SandwichFlowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandwichFlowTests.m; sourceTree = "<group>"; };
+		C501DD8F1AB46A09007C6ACF /* Attribution.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Attribution.txt; sourceTree = "<group>"; };
+		C501DD901AB46A09007C6ACF /* Background-LowerLayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-LowerLayer.png"; sourceTree = "<group>"; };
+		C501DD911AB46A09007C6ACF /* Background-LowerLayer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-LowerLayer@2x.png"; sourceTree = "<group>"; };
+		C501DD921AB46A09007C6ACF /* Background-MidLayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-MidLayer.png"; sourceTree = "<group>"; };
+		C501DD931AB46A09007C6ACF /* Background-MidLayer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-MidLayer@2x.png"; sourceTree = "<group>"; };
+		C501DD941AB46A09007C6ACF /* CheeseAndOnion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheeseAndOnion.png; sourceTree = "<group>"; };
+		C501DD951AB46A09007C6ACF /* EggAndCress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EggAndCress.png; sourceTree = "<group>"; };
+		C501DD961AB46A09007C6ACF /* EggSalad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EggSalad.png; sourceTree = "<group>"; };
+		C501DD971AB46A09007C6ACF /* Salmon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salmon.png; sourceTree = "<group>"; };
+		C501DD981AB46A09007C6ACF /* Sandwiches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sandwiches.json; sourceTree = "<group>"; };
+		C501DD991AB46A09007C6ACF /* Sarnie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sarnie.png; sourceTree = "<group>"; };
+		C501DD9A1AB46A09007C6ACF /* Sarnie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sarnie@2x.png"; sourceTree = "<group>"; };
+		C501DD9B1AB46A09007C6ACF /* Trout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trout.png; sourceTree = "<group>"; };
+		C501DDA91AB46A36007C6ACF /* CollectionViewLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewLabelCell.h; sourceTree = "<group>"; };
+		C501DDAA1AB46A36007C6ACF /* CollectionViewLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewLabelCell.m; sourceTree = "<group>"; };
+		C501DDAC1AB46D5E007C6ACF /* SandwichViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandwichViewController.h; sourceTree = "<group>"; };
+		C501DDAD1AB46D5E007C6ACF /* SandwichViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandwichViewController.m; sourceTree = "<group>"; };
+		C501DDAF1AB49B3A007C6ACF /* SandwichesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandwichesViewController.h; sourceTree = "<group>"; };
+		C501DDB01AB49B3A007C6ACF /* SandwichesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandwichesViewController.m; sourceTree = "<group>"; };
+		C51965D91AB6AB6900A0403F /* Sandwich.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sandwich.h; sourceTree = "<group>"; };
+		C51965DA1AB6AB6900A0403F /* Sandwich.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sandwich.m; sourceTree = "<group>"; };
+		C51965DC1AB6CD8400A0403F /* DynamicSandwichViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicSandwichViewController.h; sourceTree = "<group>"; };
+		C51965DD1AB6CD8400A0403F /* DynamicSandwichViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicSandwichViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +124,21 @@
 		C501DD641AB466D2007C6ACF /* SandwichFlow */ = {
 			isa = PBXGroup;
 			children = (
+				C501DD8E1AB469F4007C6ACF /* Assets */,
 				C501DD691AB466D2007C6ACF /* AppDelegate.h */,
 				C501DD6A1AB466D2007C6ACF /* AppDelegate.m */,
 				C501DD6F1AB466D2007C6ACF /* ViewController.h */,
 				C501DD701AB466D2007C6ACF /* ViewController.m */,
+				C501DDA91AB46A36007C6ACF /* CollectionViewLabelCell.h */,
+				C501DDAA1AB46A36007C6ACF /* CollectionViewLabelCell.m */,
+				C501DDAC1AB46D5E007C6ACF /* SandwichViewController.h */,
+				C501DDAD1AB46D5E007C6ACF /* SandwichViewController.m */,
+				C501DDAF1AB49B3A007C6ACF /* SandwichesViewController.h */,
+				C501DDB01AB49B3A007C6ACF /* SandwichesViewController.m */,
+				C51965D91AB6AB6900A0403F /* Sandwich.h */,
+				C51965DA1AB6AB6900A0403F /* Sandwich.m */,
+				C51965DC1AB6CD8400A0403F /* DynamicSandwichViewController.h */,
+				C51965DD1AB6CD8400A0403F /* DynamicSandwichViewController.m */,
 				C501DD721AB466D2007C6ACF /* Main.storyboard */,
 				C501DD751AB466D2007C6ACF /* Images.xcassets */,
 				C501DD771AB466D2007C6ACF /* LaunchScreen.xib */,
@@ -120,6 +172,26 @@
 				C501DD831AB466D3007C6ACF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C501DD8E1AB469F4007C6ACF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C501DD8F1AB46A09007C6ACF /* Attribution.txt */,
+				C501DD901AB46A09007C6ACF /* Background-LowerLayer.png */,
+				C501DD911AB46A09007C6ACF /* Background-LowerLayer@2x.png */,
+				C501DD921AB46A09007C6ACF /* Background-MidLayer.png */,
+				C501DD931AB46A09007C6ACF /* Background-MidLayer@2x.png */,
+				C501DD941AB46A09007C6ACF /* CheeseAndOnion.png */,
+				C501DD951AB46A09007C6ACF /* EggAndCress.png */,
+				C501DD961AB46A09007C6ACF /* EggSalad.png */,
+				C501DD971AB46A09007C6ACF /* Salmon.png */,
+				C501DD981AB46A09007C6ACF /* Sandwiches.json */,
+				C501DD991AB46A09007C6ACF /* Sarnie.png */,
+				C501DD9A1AB46A09007C6ACF /* Sarnie@2x.png */,
+				C501DD9B1AB46A09007C6ACF /* Trout.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +274,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C501DDA31AB46A09007C6ACF /* EggSalad.png in Resources */,
+				C501DDA21AB46A09007C6ACF /* EggAndCress.png in Resources */,
+				C501DD9F1AB46A09007C6ACF /* Background-MidLayer.png in Resources */,
+				C501DDA41AB46A09007C6ACF /* Salmon.png in Resources */,
 				C501DD741AB466D2007C6ACF /* Main.storyboard in Resources */,
 				C501DD791AB466D2007C6ACF /* LaunchScreen.xib in Resources */,
+				C501DDA01AB46A09007C6ACF /* Background-MidLayer@2x.png in Resources */,
+				C501DDA71AB46A09007C6ACF /* Sarnie@2x.png in Resources */,
+				C501DDA11AB46A09007C6ACF /* CheeseAndOnion.png in Resources */,
+				C501DD9E1AB46A09007C6ACF /* Background-LowerLayer@2x.png in Resources */,
+				C501DDA81AB46A09007C6ACF /* Trout.png in Resources */,
+				C501DDA61AB46A09007C6ACF /* Sarnie.png in Resources */,
+				C501DD9D1AB46A09007C6ACF /* Background-LowerLayer.png in Resources */,
+				C501DDA51AB46A09007C6ACF /* Sandwiches.json in Resources */,
+				C501DD9C1AB46A09007C6ACF /* Attribution.txt in Resources */,
 				C501DD761AB466D2007C6ACF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,9 +308,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C501DD6E1AB466D2007C6ACF /* SandwichFlow.xcdatamodeld in Sources */,
+				C51965DE1AB6CD8400A0403F /* DynamicSandwichViewController.m in Sources */,
 				C501DD6B1AB466D2007C6ACF /* AppDelegate.m in Sources */,
+				C501DDAB1AB46A36007C6ACF /* CollectionViewLabelCell.m in Sources */,
+				C501DDAE1AB46D5E007C6ACF /* SandwichViewController.m in Sources */,
 				C501DD711AB466D2007C6ACF /* ViewController.m in Sources */,
 				C501DD681AB466D2007C6ACF /* main.m in Sources */,
+				C51965DB1AB6AB6900A0403F /* Sandwich.m in Sources */,
+				C501DDB11AB49B3A007C6ACF /* SandwichesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +508,7 @@
 				C501DD8A1AB466D3007C6ACF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C501DD8B1AB466D3007C6ACF /* Build configuration list for PBXNativeTarget "SandwichFlowTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +517,7 @@
 				C501DD8D1AB466D3007C6ACF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

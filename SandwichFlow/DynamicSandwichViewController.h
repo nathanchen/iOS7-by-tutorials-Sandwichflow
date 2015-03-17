@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DynamicSandwichViewController : UIViewController
+@interface DynamicSandwichViewController : UIViewController <UICollisionBehaviorDelegate>
 
 @end
